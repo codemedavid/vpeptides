@@ -16,19 +16,19 @@ const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
     <div className="relative min-h-[90vh] overflow-hidden grain-overlay flex items-center justify-center">
 
       {/* Modern Gradient Background - Refined */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-[#F5E6FA] to-[#EDE9FE]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-[#fcfbfc] to-[#f0f8fa]" />
 
       {/* Abstract Shapes */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Top Right Blob */}
         <div
-          className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full blur-3xl opacity-30 animate-pulse"
-          style={{ background: 'radial-gradient(circle, #C4B5FD 0%, transparent 70%)', animationDuration: '8s' }}
+          className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full blur-3xl opacity-50 animate-pulse"
+          style={{ background: 'radial-gradient(circle, #faedf0 0%, transparent 70%)', animationDuration: '8s' }}
         />
         {/* Bottom Left Blob */}
         <div
-          className="absolute -bottom-[10%] -left-[10%] w-[600px] h-[600px] rounded-full blur-3xl opacity-20 animate-pulse"
-          style={{ background: 'radial-gradient(circle, #1ABC9C 0%, transparent 70%)', animationDuration: '10s' }}
+          className="absolute -bottom-[10%] -left-[10%] w-[600px] h-[600px] rounded-full blur-3xl opacity-50 animate-pulse"
+          style={{ background: 'radial-gradient(circle, #e1f1f5 0%, transparent 70%)', animationDuration: '10s' }}
         />
       </div>
 
@@ -51,8 +51,8 @@ const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
           {/* Logo Brand */}
           <div className="mb-8 md:mb-10">
             <img
-              src="/glow-logo.jpg"
-              alt="Glow with Joo"
+              src="/v-peptides-logo.png"
+              alt="V Peptides"
               className="h-24 md:h-32 w-auto mx-auto object-contain drop-shadow-md rounded-xl"
             />
           </div>
@@ -64,12 +64,16 @@ const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-charcoal-900 mb-6 leading-tight tracking-tight drop-shadow-sm">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-charcoal-900 mb-2 leading-tight tracking-tight drop-shadow-sm">
             Reject Average. <br className="hidden md:block" />
-            <span className="text-blush-600">
+            <span className="text-blush-500">
               Reveal Your Radiance.
             </span>
           </h1>
+
+          <div className="font-script text-3xl md:text-5xl text-pastel-blue-600 mb-6 drop-shadow-sm rotate-[-2deg]">
+            experience the glow
+          </div>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-charcoal-600 mb-10 max-w-2xl mx-auto leading-relaxed font-light">

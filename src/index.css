@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Caveat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,9 @@
 
 @layer base {
   body {
-    @apply font-sans text-charcoal-800 bg-white antialiased leading-relaxed;
+    @apply font-sans text-charcoal-800 antialiased leading-relaxed;
+    background-color: #fcfbfc;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #f0f4f8 100%);
   }
 
   h1,
@@ -39,28 +41,28 @@
 
   /* Better Than Bare Button Styles */
   .btn-primary {
-    @apply bg-blush-500 text-white px-8 py-4 rounded-xl font-semibold text-sm tracking-wide transition-all duration-300 shadow-soft hover:bg-blush-600 hover:shadow-luxury active:transform active:scale-[0.98];
+    @apply bg-blush-500 text-white px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 shadow-soft hover:bg-blush-400 hover:shadow-luxury hover:-translate-y-0.5 active:transform active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply bg-transparent text-rose-500 border-2 border-rose-400 px-8 py-4 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-rose-50 hover:border-rose-500 active:transform active:scale-[0.98];
+    @apply bg-transparent text-pastel-blue-700 border-2 border-pastel-blue-300 px-8 py-4 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-pastel-blue-50 hover:border-pastel-blue-400 hover:-translate-y-0.5 active:transform active:scale-[0.98];
   }
 
   /* Luxury Card Styles */
   .card {
-    @apply bg-white rounded-2xl shadow-soft border border-blush-100 p-6 transition-all duration-300 hover:shadow-luxury hover:border-blush-200;
+    @apply bg-white/80 backdrop-blur-md rounded-2xl shadow-soft border border-white/60 p-6 transition-all duration-300 hover:shadow-luxury hover:-translate-y-1;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 bg-white border border-charcoal-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blush-400 focus:border-transparent transition-all placeholder-charcoal-400 text-charcoal-800;
+    @apply w-full px-4 py-3 bg-white/90 border border-charcoal-100 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pastel-blue-300 focus:border-transparent transition-all placeholder-charcoal-400 text-charcoal-800;
   }
 
   .badge {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+    @apply inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-white/70 shadow-sm border border-white/50 backdrop-blur-sm;
   }
 
   .badge-primary {
-    @apply bg-blush-100 text-rose-700;
+    @apply text-blush-700 bg-blush-50 border-blush-100;
   }
 
   .badge-accent {

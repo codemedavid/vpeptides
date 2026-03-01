@@ -11,34 +11,34 @@ export default {
         'theme-bg': '#FFFFFF',           // Pure White
         'theme-text': '#4A4A4A',         // Soft Charcoal
 
-        // Primary - Glow Purple
+        // Primary - Soft Pink
         'blush': {
-          DEFAULT: '#7A28CB', // Main Purple
-          50: '#F5F3FF',
-          100: '#EDE9FE',
-          200: '#DDD6FE',
-          300: '#C4B5FD',
-          400: '#A78BFA',
-          500: '#8B5CF6',
-          600: '#7A28CB', // Primary Brand Color
-          700: '#6D28D9',
-          800: '#5B21B6',
-          900: '#4C1D95',
+          DEFAULT: '#e17c93', // Soft Pink
+          50: '#fdf8f9',
+          100: '#faedf0',
+          200: '#f5dce1',
+          300: '#f0c3cd',
+          400: '#eaa3b3',
+          500: '#e17c93',
+          600: '#d05874',
+          700: '#b04058',
+          800: '#93384b',
+          900: '#7c3141',
         },
 
-        // Accent - Glow Teal
-        'glow-teal': {
-          DEFAULT: '#1ABC9C',
-          50: '#F0FDFA',
-          100: '#CCFBF1',
-          200: '#99F6E4',
-          300: '#5EEAD4',
-          400: '#2DD4BF',
-          500: '#14B8A6',
-          600: '#0D9488',
-          700: '#0F766E',
-          800: '#115E59',
-          900: '#134E4A',
+        // Accent - Pastel Blue
+        'pastel-blue': {
+          DEFAULT: '#a5d3df',
+          50: '#f0f8fa',
+          100: '#e1f1f5',
+          200: '#c9e6ed',
+          300: '#a5d3df',
+          400: '#78bbcd',
+          500: '#57a1b6',
+          600: '#468196',
+          700: '#3b687b',
+          800: '#345766',
+          900: '#2f4956',
         },
 
         // Secondary - Soft Gold/Accent
@@ -77,26 +77,28 @@ export default {
         'warm-white': '#FAFAFB',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Playfair Display', 'serif'],
+        sans: ['Outfit', 'sans-serif'],
+        script: ['Caveat', 'cursive'],
+        heading: ['Outfit', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
       },
       boxShadow: {
-        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.03)',
-        'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
-        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-        'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
-        'soft': '0 2px 8px rgba(248, 200, 216, 0.15), 0 4px 16px rgba(248, 200, 216, 0.1)',
-        'luxury': '0 4px 20px rgba(232, 164, 184, 0.15)',
+        'sm': '3px 3px 10px rgba(180, 190, 205, 0.15), -3px -3px 10px rgba(255, 255, 255, 0.9)',
+        'DEFAULT': '5px 5px 15px rgba(180, 190, 205, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8)',
+        'md': '8px 8px 24px rgba(180, 190, 205, 0.25), -8px -8px 24px rgba(255, 255, 255, 0.9)',
+        'lg': '12px 12px 30px rgba(180, 190, 205, 0.25), -12px -12px 30px rgba(255, 255, 255, 1)',
+        'soft': '15px 15px 35px rgba(180, 190, 205, 0.2), -15px -15px 35px rgba(255, 255, 255, 0.8)',
+        'luxury': '20px 20px 40px rgba(225, 124, 147, 0.15), -20px -20px 40px rgba(255, 255, 255, 0.9)',
+        'neumorphic-inner': 'inset 4px 4px 8px rgba(180, 190, 205, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.9)',
       },
       borderRadius: {
         'none': '0',
-        'sm': '0.25rem',
-        'DEFAULT': '0.5rem',
-        'md': '0.75rem',
-        'lg': '1rem',
-        'xl': '1.25rem',
-        '2xl': '1.5rem',
+        'sm': '0.5rem',
+        'DEFAULT': '1rem',
+        'md': '1.5rem',
+        'lg': '2rem',
+        'xl': '2.5rem',
+        '2xl': '3rem',
         'full': '9999px',
       },
       animation: {

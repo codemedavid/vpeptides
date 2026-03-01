@@ -77,7 +77,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
   const decrementQuantity = () => setQuantity(prev => prev > 1 ? prev - 1 : 1);
 
   return (
-    <div className="bg-white h-full flex flex-col group relative border border-gray-100 rounded shadow-sm hover:border-blush-200 transition-all duration-300 hover:shadow-clinical">
+    <div className="bg-white h-full flex flex-col group relative border border-gray-100 rounded shadow-sm hover:border-blush-200 transition-all duration-300 hover:shadow-luxury">
       {/* Click overlay for product details */}
       <div
         onClick={() => onProductClick?.(product)}
@@ -86,7 +86,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
       />
 
       {/* Product Image */}
-      <div className="relative h-28 sm:h-44 bg-secondary-50 overflow-hidden border-b border-gray-50">
+      <div className="relative h-28 sm:h-44 bg-pastel-blue-50 overflow-hidden border-b border-gray-50">
         {product.image_url && !imageError ? (
           <img
             src={product.image_url}
@@ -108,7 +108,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
             </span>
           )}
           {hasDiscount && (
-            <span className="px-2 py-1 bg-glow-teal-600 text-white text-[10px] font-bold rounded shadow-sm">
+            <span className="px-2 py-1 bg-pastel-blue-500 text-white text-[10px] font-bold rounded shadow-sm">
               {Math.round((1 - currentPrice / originalPrice) * 100)}% OFF
             </span>
           )}
@@ -309,7 +309,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
 
           {/* Cart Status */}
           {cartQuantity > 0 && (
-            <div className="text-center text-[10px] text-bio-green font-medium bg-bio-green-light/50 rounded py-1">
+            <div className="text-center text-[10px] text-pastel-blue-800 font-medium bg-pastel-blue-50 rounded py-1 border border-pastel-blue-100">
               {cartQuantity} in cart
             </div>
           )}

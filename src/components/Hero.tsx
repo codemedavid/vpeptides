@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
           <div className="mb-8 md:mb-10">
             <img
               src="/v-peptides-logo.png"
-              alt="V Peptides"
+              alt="VPeptideS"
               className="h-24 md:h-32 w-auto mx-auto object-contain drop-shadow-md rounded-xl"
             />
           </div>

@@ -22,11 +22,11 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
             >
               <img
                 src="/v-peptides-logo.png"
-                alt="V Peptides"
+                alt="VPeptideS"
                 className="h-10 sm:h-12 w-auto object-contain rounded-lg"
               />
               <span className="ml-3 text-lg sm:text-xl font-heading font-bold text-blush-600 tracking-tight">
-                V Peptides
+                VPeptideS
               </span>
             </button>
 
@@ -120,11 +120,11 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
               <div className="flex items-center gap-3">
                 <img
                   src="/v-peptides-logo.png"
-                  alt="V Peptides"
+                  alt="VPeptideS"
                   className="h-8 w-auto object-contain rounded-md"
                 />
                 <span className="text-lg font-heading font-bold text-blush-600">
-                  V Peptides
+                  VPeptideS
                 </span>
               </div>
               <button

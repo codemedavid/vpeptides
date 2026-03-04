@@ -482,7 +482,7 @@ const AdminDashboard: React.FC = () => {
             <div className="mx-auto mb-4">
               <img
                 src="/v-peptides-logo.png"
-                alt="V Peptides"
+                alt="VPeptideS"
                 className="h-14 w-auto mx-auto object-contain"
               />
             </div>
@@ -1381,7 +1381,7 @@ const AdminDashboard: React.FC = () => {
                 <div className="h-10 flex items-center">
                   <img
                     src="/v-peptides-logo.png"
-                    alt="V Peptides"
+                    alt="VPeptideS"
                     className="h-10 w-auto object-contain"
                   />
                 </div>
